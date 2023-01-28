@@ -12,7 +12,7 @@ stages:
     - job: Build
       displayName: 'Powershell Script Execute'
       steps:
-        - task: PublishBuildArtifacts@1
+        - task: PublishBuildArtifacts
           inputs:
             PathtoPublish: 'C:'
             ArtifactName: 'allprojnameid.csv'
